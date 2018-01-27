@@ -1,1 +1,1 @@
-# dashai-mariadb
+# mariadb

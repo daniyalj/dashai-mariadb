@@ -1,0 +1,7 @@
+FROM docker.io/mariadb
+ADD  data.tgz /var/lib/mysql
+ADD docker-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["docker-entrypoint.sh"]
+EXPOSE 3306
+CMD ["mysqld"]
+
